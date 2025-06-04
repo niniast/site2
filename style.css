@@ -94,4 +94,21 @@ section {
 section img {
   width: 363px;
   height: 202px;
+  background-color: #f8f8f8;
+}
+footer {
+  background-color: #29b24e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+footer div ul {
+  display: flex;
+  gap: 30px;
+}
+
+.homeslider {
+  width: 810px;
+  height: 732px;
 }
