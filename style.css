@@ -145,3 +145,14 @@ footer {
     width: 810px;
     height: 732px;
 }
+.homesection1 {
+    display: flex;
+}
+
+.part1 {
+    border-radius: 10px;
+}
+.part2 {
+    border-radius: 10px;
+    background-color: #c2c2c24d;
+}
