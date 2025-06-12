@@ -21,11 +21,13 @@ body {
     max-width: 1320px;
     width: 100%;
     margin: 0 auto;
-    border: 1px solid red;
 }
 .logo {
     width: 48px;
     height: 48px;
+}
+.search {
+    display: none;
 }
 header,
 .section1 {
@@ -67,6 +69,14 @@ nav a:hover {
 .text p {
     font-size: 16px;
     margin-bottom: 20px;
+}
+.text input {
+    border-radius: 15px;
+    padding: 10px;
+}
+.price {
+    color: green;
+    text-align: right;
 }
 .aside {
     width: 300px;
@@ -127,6 +137,7 @@ nav a:hover {
 footer {
     background-color: #29b24e;
     border-radius: 15px;
+    margin-top: 70px;
 }
 .footer {
     display: flex;
@@ -140,6 +151,7 @@ footer {
 }
 .copyright {
     text-align: center;
+    padding: 20px;
 }
 .homeslider {
     width: 810px;
@@ -153,6 +165,69 @@ footer {
     border-radius: 10px;
 }
 .part2 {
+    width: 786px;
     border-radius: 10px;
     background-color: #c2c2c24d;
+}
+.part2-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+.vip-top {
+    background-color: #29b24e;
+    border-radius: 15px;
+}
+
+.part2 h3 {
+    padding: 10px;
+}
+.part2 span {
+    padding: 10px;
+}
+
+.part2 p {
+    padding: 15px;
+}
+.mobile_menu {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .mobile_menu {
+        display: block;
+    }
+    .mobile_menu_wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav {
+        display: none;
+    }
+    .sell {
+        display: none;
+    }
+    .search {
+        display: block;
+    }
+    .section1 {
+        flex-direction: column-reverse;
+    }
+    .section2 {
+    grid-template-columns: repeat(1, 1fr);
+   
+}
+.support{
+    display: none;
+}
+
+.footer div ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+.mobile_menu_wrapper{
+    background-color: white;
+    border-radius: 20px;
+    padding: 30px;
 }
